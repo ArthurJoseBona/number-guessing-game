@@ -26,6 +26,7 @@ This project is based on the [Number Guessing Game challenge from roadmap.sh](ht
 - Provides feedback if the guess is higher or lower than the target number.
 - Tracks number of attempts.
 - Ends the game when the user guesses correctly or runs out of chances.
+- Allow multiple rounds of play.
 
 ---
 
@@ -77,7 +78,6 @@ java Game
 
 ## Future Improvements
 
-- Allow multiple rounds of play.
 - Add a timer to track how long it takes to guess the number.
 - Implement a hint system for stuck users.
 - Track high scores for each difficulty level.

@@ -21,11 +21,39 @@ public class GameController {
         view = new GameView();
     }
 
-    // Method to start and manage the game
-    public void initGame() {
+
+    public void play() {
         // Show initial welcome or menu screen
         view.showInitialMenu();
 
+        boolean keepPlaying = true;
+
+        while (keepPlaying) {
+            initGame(); // Start a single game session
+
+            boolean validInput = false;
+            while (!validInput) {
+                view.showPlayAgainMessage(); // Ask the user if they want to play again
+                int option = -1;
+                try {
+                    option = Integer.parseInt(sc.nextLine()); // Read user input
+                } catch (Exception e) {
+                    view.showMessage("\nInvalid input. Please enter a number.\n", true); // Handle invalid input
+                }
+
+                if (option == 1 || option == 2) { // Accept only 1 (yes) or 2 (no)
+                    validInput = true;
+                    keepPlaying = option == 1; // Continue playing if option is 1
+                }
+            }
+        }
+
+        view.showEndMessage(); // Show goodbye message
+        sc.close(); // Close Scanner to release system resources
+    }
+
+    // Method to start and manage a game
+    public void initGame() {
         boolean validInput = false;
         int choose = -1;
 

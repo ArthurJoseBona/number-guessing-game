@@ -12,6 +12,6 @@ public class AppGame {
         GameController controller = new GameController();
 
         // Start the game
-        controller.initGame();
+        controller.play();
     }
 }

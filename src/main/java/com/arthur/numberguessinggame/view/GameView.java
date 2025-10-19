@@ -25,4 +25,14 @@ public class GameView {
         System.out.print(msg); // Print the message to console
     }
 
+    public void showPlayAgainMessage() {
+        System.out.println("\nDo you want to keep playing?");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
+    }
+
+    public void showEndMessage() {
+        System.out.println("\nThanks for playing!");
+    }
+
 }
