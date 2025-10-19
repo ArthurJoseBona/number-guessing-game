@@ -6,12 +6,13 @@ A simple **Command-Line Interface (CLI) number guessing game** in Java, where th
 
 ## Table of Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [How to Play](#how-to-play)
-- [Future Improvements](#future-improvements)
-- [License](#license)
+- [Number Guessing Game](#number-guessing-game)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [How to Play](#how-to-play)
+  - [Future Improvements](#future-improvements)
 
 ---
 
@@ -72,7 +73,7 @@ java Game
 
 ---
 
-##Future Improvements
+## Future Improvements
 
 - Allow multiple rounds of play.
 - Add a timer to track how long it takes to guess the number.
