@@ -10,8 +10,8 @@ import com.arthur.numberguessinggame.model.MediumDifficulty;
 import com.arthur.numberguessinggame.view.GameView;
 
 public class GameController {
-    Scanner sc = new Scanner(System.in);
-    GameView view;
+    private Scanner sc = new Scanner(System.in);
+    private GameView view;
 
     public GameController() {
         view = new GameView();
@@ -51,7 +51,7 @@ public class GameController {
         }
     }
 
-    public boolean initRound(Game game) {
+    private boolean initRound(Game game) {
         
         int guessed = -1;
         boolean validInput = false;
@@ -75,7 +75,7 @@ public class GameController {
         return false;
     }
 
-    public Difficulty getDifficultyByIndex(int index) {
+    private Difficulty getDifficultyByIndex(int index) {
         return switch (index) {
             case 1 -> new EasyDifficulty();
             case 2 -> new MediumDifficulty();
