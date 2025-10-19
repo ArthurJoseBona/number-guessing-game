@@ -2,6 +2,8 @@
 
 A simple **Command-Line Interface (CLI) number guessing game** in Java, where the computer randomly selects a number and the user has to guess it within a limited number of attempts.
 
+This project is based on the [Number Guessing Game challenge from roadmap.sh](https://roadmap.sh/projects/number-guessing-game)
+
 ---
 
 ## Table of Contents
